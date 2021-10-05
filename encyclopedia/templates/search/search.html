@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Search Results
+{% endblock %}
+
+{% block body %}
+  <h1>{{ header }}</h1>
+  {% if masge %}
+    <br><br>
+    <h3>{{ masge }}</h3>
+  {% endif %}
+  <ul>
+    {% for i in Result %}
+      <li><a href="/wiki/{{ i }}">{{ i }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

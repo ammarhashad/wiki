@@ -1,0 +1,16 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body %}
+    <div style="padding-left:15px">
+        <h1>Sorry Topic is already exist</h1><br>
+        <h2>You can see the topic here</h2>
+        <h4 style="padding-left:15px"><a href="/wiki/{{ topic }}">{{ topic }}</a></h4>
+    </div>
+
+
+
+{% endblock %}
